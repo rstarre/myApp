@@ -17,6 +17,10 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import {TeacherStrictGuard} from "./teacher-strict.guard";
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {NgxsModule} from "@ngxs/store";
+import {AppState} from "./app.state";
+import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
+import {NgxsLoggerPluginModule} from "@ngxs/logger-plugin";
 
 const routes: Route[] = [
   {path: "login", component: LoginComponent},
@@ -43,7 +47,10 @@ const routes: Route[] = [
     MatButtonModule,
     MatTableModule,
     MatDialogModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxsModule.forRoot([AppState]),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgxsLoggerPluginModule.forRoot(),
   ],
 
   providers: [StudentComponent],

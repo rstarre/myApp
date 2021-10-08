@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {HttpClient} from "@angular/common/http";
+import {Select, Store} from "@ngxs/store";
+import {AppState, ChangeVariable} from "./app.state";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,15 @@ import {HttpClient} from "@angular/common/http";
 })
 export class AppComponent {
 
+  constructor(private store: Store) {
+  }
 
+  @Select(AppState.getVariable)
+  variable: Observable<any> | undefined;
+
+  doThing() {
+    this.store.dispatch(new ChangeVariable())
+  }
 }
 
 // login en logout
