@@ -1,0 +1,90 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Erica"
+    },
+    {
+      "id": 3,
+      "name": "piet"
+    },
+    {
+      "name": "Henkie",
+      "teacher": "grietje",
+      "id": 4,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "test",
+      "teacher": "grietje",
+      "id": 5,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "test",
+      "teacher": "grietje",
+      "id": 6,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "test2",
+      "teacher": "grietje",
+      "id": 7,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "test3",
+      "teacher": "grietje",
+      "id": 8,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "test4",
+      "teacher": "kees",
+      "id": 9,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "literature": 7
+      }
+    },
+    {
+      "name": "test7",
+      "teacher": "grietje",
+      "id": 10,
+      "grades": {
+        "math": 5,
+        "physics": 6,
+        "litrature": 7
+      }
+    },
+    {
+      "name": "grietje",
+      "teacher": "test",
+      "id": 11
+    }
+  ],
+  "loggedIn": {
+    "name": "grietje"
+  }
+}
